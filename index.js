@@ -5,8 +5,10 @@ import Header from './src/components/Header';
 import AlbumList from './src/components/AlbumList';
 
 const App = () => {
+  // style={{ flex: 1 }} might not be necessary with the latest version of react,
+  // it is intended to tell the view to fill the entire screen.
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <Header headerText='Albums' />
       <AlbumList />
     </View>
